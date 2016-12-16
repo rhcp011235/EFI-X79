@@ -1,0 +1,90 @@
+29:472  0:138  Found BIOS RSDP at FF000
+29:472  0:000  Printing ACPI tables from RSDP FF000 ...
+29:472  0:000   FF000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+29:472  0:000    (Xsdt: 9C272078, Rsdt: 9C272028)
+29:472  0:000    9C272078: 'XSDT', 'A M I', Rev: 1, Len: 100
+29:472  0:000    9C272028: 'RSDT', 'A M I', Rev: 1, Len: 68
+29:472  0:000    Tables in Xsdt: 8
+29:472  0:000    0. 9C27C498: 'FACP', 'A M I', Rev: 5, Len: 268
+29:472  0:000        (Dsdt: 9C272170, Facs: 9C56A080, XDsdt: 9C272170, XFacs: 0)
+29:472  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:473  0:000        9C56A080: 'FACS', Ver: 2, Len: 64
+29:473  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:473  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:473  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:473  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:473  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:473  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:473  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
+29:473  0:000    Tables in Rsdt: 8
+29:473  0:000    0. 9C2720E8: 'FACP', 'A M I', Rev: 2, Len: 132
+29:473  0:000        (Dsdt: 9C272170, Facs: 9C56A040)
+29:473  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:474  0:000        9C56A040: 'FACS', Ver: 0, Len: 64
+29:474  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:474  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:474  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:474  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:474  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:474  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:474  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
+29:474  0:000  Found UEFI Acpi 2.0 RSDP at 9C272000
+29:474  0:000  Saving ACPI tables from RSDP 9C272000 to EFI\CLOVER\ACPI\origin ...
+29:474  0:000   9C272000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+29:474  0:000    (Xsdt: 9C272078, Rsdt: 9C272028)
+29:474  0:000    9C272078: 'XSDT', 'A M I', Rev: 1, Len: 100
+29:474  0:000    9C272028: 'RSDT', 'A M I', Rev: 1, Len: 68
+29:474  0:000    Tables in Xsdt: 8
+29:474  0:000    0. 9C27C498: 'FACP', 'A M I', Rev: 5, Len: 268
+29:474  0:000        (Dsdt: 9C272170, Facs: 9C56A080, XDsdt: 9C272170, XFacs: 0)
+29:474  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:475  0:000        9C56A080: 'FACS', Ver: 2, Len: 64
+29:475  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:475  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:475  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:475  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:475  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:475  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:475  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
+29:475  0:000    Tables in Rsdt: 8
+29:475  0:000    0. 9C2720E8: 'FACP', 'A M I', Rev: 2, Len: 132
+29:475  0:000        (Dsdt: 9C272170, Facs: 9C56A040)
+29:475  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:475  0:000        9C56A040: 'FACS', Ver: 0, Len: 64
+29:475  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:475  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:475  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:475  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:475  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:475  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:475  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
+29:475  0:000  Found UEFI Acpi 1.0 RSDP at 9C272000
+29:475  0:000  Printing ACPI tables from RSDP 9C272000 ...
+29:475  0:000   9C272000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+29:475  0:000    (Xsdt: 9C272078, Rsdt: 9C272028)
+29:475  0:000    9C272078: 'XSDT', 'A M I', Rev: 1, Len: 100
+29:475  0:000    9C272028: 'RSDT', 'A M I', Rev: 1, Len: 68
+29:475  0:000    Tables in Xsdt: 8
+29:475  0:000    0. 9C27C498: 'FACP', 'A M I', Rev: 5, Len: 268
+29:475  0:000        (Dsdt: 9C272170, Facs: 9C56A080, XDsdt: 9C272170, XFacs: 0)
+29:475  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:476  0:000        9C56A080: 'FACS', Ver: 2, Len: 64
+29:476  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:476  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:476  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:476  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:476  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:476  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:476  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
+29:476  0:000    Tables in Rsdt: 8
+29:476  0:000    0. 9C2720E8: 'FACP', 'A M I', Rev: 2, Len: 132
+29:476  0:000        (Dsdt: 9C272170, Facs: 9C56A040)
+29:476  0:000        9C272170: 'DSDT', 'A M I', Rev: 2, Len: 41768
+29:477  0:000        9C56A040: 'FACS', Ver: 0, Len: 64
+29:477  0:000    1. 9C27C5A8: 'APIC', 'A M I', Rev: 3, Len: 256
+29:477  0:000    2. 9C27C6A8: 'FPDT', 'A M I', Rev: 1, Len: 68
+29:477  0:000    3. 9C27C6F0: 'MCFG', 'OEMMCFG.', Rev: 1, Len: 60
+29:477  0:000    4. 9C27C730: 'HPET', 'A M I', Rev: 1, Len: 56
+29:477  0:000    5. 9C349920: 'DMAR', 'OEMDMAR', Rev: 1, Len: 180
+29:477  0:000    6. 9C27C7C0: 'SSDT', 'CpuPm', Rev: 2, Len: 839976
+29:477  0:000    7. 9C3498E8: 'BGRT', 'A M I', Rev: 0, Len: 56
