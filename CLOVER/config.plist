@@ -1,234 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>ACPI</key>
 	<dict>
-		<key>DSDT</key>
+		<key>ACPI</key>
 		<dict>
-			<key>Debug</key>
-			<false/>
-			<key>Fixes</key>
-			<false/>
-			<key>Name</key>
-			<string>DSDT.aml</string>
-		</dict>
-		<key>DropTables</key>
-		<array>
+			<key>DSDT</key>
 			<dict>
-				<key>Signature</key>
-				<string>MCFG</string>
+				<key>Debug</key>
+				<false/>
+				<key>Fixes</key>
+				<false/>
+				<key>Name</key>
+				<string>DSDT.aml</string>
 			</dict>
+			<key>DropTables</key>
+			<array>
+				<dict>
+					<key>Signature</key>
+					<string>MCFG</string>
+				</dict>
+				<dict>
+					<key>Signature</key>
+					<string>DMAR</string>
+				</dict>
+			</array>
+			<key>HaltEnabler</key>
+			<false/>
+			<key>SSDT</key>
 			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
+				<key>DropOem</key>
+				<true/>
+				<key>Generate</key>
+				<false/>
 			</dict>
-		</array>
-		<key>HaltEnabler</key>
-		<false/>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
+			<key>smartUPS</key>
 			<true/>
-			<key>Generate</key>
+		</dict>
+		<key>Boot</key>
+		<dict>
+			<key>Arguments</key>
+			<string>-v npci=0x2000 darkwake=8</string>
+			<key>DefaultVolume</key>
+			<string>MacOS</string>
+			<key>Legacy</key>
+			<string>PBR</string>
+			<key>Log</key>
+			<false/>
+			<key>NeverHibernate</key>
+			<true/>
+			<key>Secure</key>
+			<false/>
+			<key>Timeout</key>
+			<integer>0</integer>
+			<key>XMPDetection</key>
 			<false/>
 		</dict>
-		<key>smartUPS</key>
-		<true/>
-	</dict>
-	<key>Boot</key>
-	<dict>
-		<key>Arguments</key>
-		<string>-v npci=0x2000 darkwake=8</string>
-		<key>DefaultVolume</key>
-		<string>Mac OS</string>
-		<key>Legacy</key>
-		<string>PBR</string>
-		<key>Log</key>
-		<false/>
-		<key>NeverHibernate</key>
-		<true/>
-		<key>Secure</key>
-		<false/>
-		<key>Timeout</key>
-		<integer>0</integer>
-		<key>XMPDetection</key>
-		<false/>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>Type</key>
-		<string>0x0A01</string>
-	</dict>
-	<key>Devices</key>
-	<dict>
-		<key>Audio</key>
+		<key>CPU</key>
+		<dict>
+			<key>Type</key>
+			<string>0x0A01</string>
+		</dict>
+		<key>Devices</key>
+		<dict>
+			<key>Audio</key>
+			<dict>
+				<key>Inject</key>
+				<string>1</string>
+			</dict>
+			<key>Inject</key>
+			<false/>
+			<key>Properties</key>
+			<string></string>
+		</dict>
+		<key>GUI</key>
+		<dict>
+			<key>Hide</key>
+			<array>
+				<string>\EFI\BOOT\BOOTX64.EFI</string>
+			</array>
+			<key>Language</key>
+			<string>en:0</string>
+			<key>Mouse</key>
+			<dict>
+				<key>DoubleClick</key>
+				<integer>500</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Mirror</key>
+				<false/>
+				<key>Speed</key>
+				<integer>8</integer>
+			</dict>
+			<key>Scan</key>
+			<dict>
+				<key>Entries</key>
+				<true/>
+				<key>Legacy</key>
+				<false/>
+				<key>Tool</key>
+				<true/>
+			</dict>
+			<key>Theme</key>
+			<string>Asus</string>
+		</dict>
+		<key>Graphics</key>
 		<dict>
 			<key>Inject</key>
-			<string>1</string>
+			<false/>
+			<key>InjectEDID</key>
+			<false/>
+			<key>LoadVBios</key>
+			<false/>
 		</dict>
-		<key>Inject</key>
-		<false/>
-		<key>Properties</key>
-		<string></string>
-	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>Hide</key>
-		<array>
-			<string>\EFI\BOOT\BOOTX64.EFI</string>
-		</array>
-		<key>Language</key>
-		<string>en:0</string>
-		<key>Mouse</key>
+		<key>KernelAndKextPatches</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
-			<key>Enabled</key>
+			<key>AppleRTC</key>
 			<false/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
-		<key>Theme</key>
-		<string>Asus</string>
-	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>Inject</key>
-		<false/>
-		<key>InjectEDID</key>
-		<true/>
-		<key>LoadVBios</key>
-		<true/>
-	</dict>
-	<key>KernelAndKextPatches</key>
-	<dict>
-		<key>AppleRTC</key>
-		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.11-AppleHDA/Realtek ALC...</string>
-				<key>Find</key>
-				<data>
+			<key>KextsToPatch</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>t1-10.11-AppleHDA/Realtek ALC...</string>
+					<key>Find</key>
+					<data>
 				gxnUEQ==
 				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
+					<key>Name</key>
+					<string>AppleHDA</string>
+					<key>Replace</key>
+					<data>
 				AAAAAA==
 				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.9-10.11-AppleHDA/Realtek ALC1150</string>
-				<key>Find</key>
-				<data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>t1-10.9-10.11-AppleHDA/Realtek ALC1150</string>
+					<key>Find</key>
+					<data>
 				ixnUEQ==
 				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
+					<key>Name</key>
+					<string>AppleHDA</string>
+					<key>Replace</key>
+					<data>
 				AAnsEA==
 				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-AppleHDA/Resources/xml&gt;zml</string>
-				<key>Find</key>
-				<data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>t1-AppleHDA/Resources/xml&gt;zml</string>
+					<key>Find</key>
+					<data>
 				eG1sLnps
 				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
+					<key>Name</key>
+					<string>AppleHDA</string>
+					<key>Replace</key>
+					<data>
 				em1sLnps
 				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>TrimEnable</string>
-				<key>Find</key>
-				<data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>TrimEnable</string>
+					<key>Find</key>
+					<data>
 				AEFQUExFIFNTRAA=
 				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
+					<key>Name</key>
+					<string>IOAHCIBlockStorage</string>
+					<key>Replace</key>
+					<data>
 				AAAAAAAAAAAAAAA=
 				</data>
-			</dict>
-		</array>
-	</dict>
+				</dict>
+			</array>
+		</dict>
 		<key>RtVariables</key>
-	<dict>
-		<key>BooterConfig</key>
-		<string>0x28</string>
-		<key>CsrActiveConfig</key>
-		<string>0x67</string>
-		<key>MLB</key>
-		<string></string>
-		<key>ROM</key>
-		<string></string>
-	</dict>	
-<key>SMBIOS</key>
-        <dict>
-                <key>BiosReleaseDate</key>
-                <string>06/12/13</string>
-                <key>BiosVendor</key>
-                <string>Apple Inc.</string>
-                <key>BiosVersion</key>
-                <string>MP61.88Z.0116.B04.1312061508</string>
-                <key>Board-ID</key>
-                <string>Mac-F60DEB81FF30ACF6</string>
-                <key>BoardManufacturer</key>
-                <string>Apple Inc.</string>
-                <key>BoardType</key>
-                <integer>11</integer>
-                <key>ChassisAssetTag</key>
-                <string>Pro-Enclosure</string>
-                <key>ChassisManufacturer</key>
-                <string>Apple Inc.</string>
-                <key>ChassisType</key>
-                <string>06</string>
-                <key>Family</key>
-                <string>Mac Pro</string>
-                <key>Manufacturer</key>
-                <string>Apple Inc.</string>
-                <key>Mobile</key>
-                <false/>
-                <key>ProductName</key>
-                <string>MacPro6,1</string>
-                <key>SerialNumber</key>
-                <string>ADD HERE</string>
-                <key>Trust</key>
-                <false/>
-                <key>Version</key>
-                <string>1.0</string>
-        </dict>
-	<key>SystemParameters</key>
-	<dict>
-		<key>InjectKexts</key>
-		<true/>
-		<key>InjectSystemID</key>
-		<false/>
+		<dict>
+			<key>BooterConfig</key>
+			<string>0x28</string>
+			<key>CsrActiveConfig</key>
+			<string>0x67</string>
+			<key>MLB</key>
+			<string></string>
+			<key>ROM</key>
+			<string></string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BiosReleaseDate</key>
+			<string>06/12/13</string>
+			<key>BiosVendor</key>
+			<string>Apple Inc.</string>
+			<key>BiosVersion</key>
+			<string>MP61.88Z.0116.B04.1312061508</string>
+			<key>Board-ID</key>
+			<string>Mac-F60DEB81FF30ACF6</string>
+			<key>BoardManufacturer</key>
+			<string>Apple Inc.</string>
+			<key>BoardType</key>
+			<integer>11</integer>
+			<key>ChassisAssetTag</key>
+			<string>Pro-Enclosure</string>
+			<key>ChassisManufacturer</key>
+			<string>Apple Inc.</string>
+			<key>ChassisType</key>
+			<string>06</string>
+			<key>Family</key>
+			<string>Mac Pro</string>
+			<key>Manufacturer</key>
+			<string>Apple Inc.</string>
+			<key>Mobile</key>
+			<false/>
+			<key>ProductName</key>
+			<string>MacPro6,1</string>
+			<key>SerialNumber</key>
+			<string>GENERATE</string>
+			<key>Trust</key>
+			<false/>
+			<key>Version</key>
+			<string>1.0</string>
+		</dict>
+		<key>SystemParameters</key>
+		<dict>
+			<key>InjectKexts</key>
+			<true/>
+			<key>InjectSystemID</key>
+			<false/>
+		</dict>
 	</dict>
-</dict>
 </plist>
-
